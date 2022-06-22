@@ -169,6 +169,7 @@ function Cards(props) {
     }
     // Rating fun
     const giveRating = async() =>{
+        console.log('clicked')
         try{
             // updating rating of worker
             let data;
@@ -178,9 +179,9 @@ function Cards(props) {
             } else {}
             let increGivenRatings=data.givenRatings+1
             // let increRating=(data.rating+rating)/2
-            let rating=data.rating+rating
+            let r=data.rating+rating
             await updateDoc(doc(db,'serviceusers',`${props.data.workerMail}`), {
-                rating: rating,
+                rating: r,
                 givenRatings: increGivenRatings,
             });
             if(rating===1) await updateDoc(doc(db,'serviceusers',`${props.data.workerMail}`), {
@@ -218,7 +219,9 @@ function Cards(props) {
             });
             setShowRatingBtn(false)
             handleRateClose()
-        }catch(e){}
+        }catch(e){
+            console.log(e)
+        }
     }
     return(
         <>

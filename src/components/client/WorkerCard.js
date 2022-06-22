@@ -93,7 +93,7 @@ export default function WorkerCard(props) {
           <Card.Text style={{textAlign:'left' }}>
           {
             (props.data.rating>0)?
-            <h4><u>Rating</u>: <span style={{color:'black',backgroundColor:'white',padding:'3px',borderRadius:'5px'}}>{props.data.rating.toFixed(2)/props.data.givenRatings}/5</span> (by {props.data.givenRatings})</h4>
+            <h4><u>Rating</u>: <span style={{color:'black',backgroundColor:'white',padding:'3px',borderRadius:'5px'}}>{(props.data.rating.toFixed(2)/props.data.givenRatings).toFixed(2)}/5</span> (by {props.data.givenRatings})</h4>
             :<h4><u>Rating</u>: Not yet</h4>
           }
           {/* <h4><u>Services: </u></h4>

@@ -17,7 +17,7 @@ import Profile from './components/common/Profile'
 
 import Dashboard from './components/worker/Dashboard';
 import Requests from './components/worker/Requests'
-// import Scan from './components/worker/Scan'
+import Scan from './components/worker/Scan'
 
 import Out from './components/common/Out';
 
@@ -165,7 +165,7 @@ function App() {
 
           <Route path="/dashboard" element={<Dashboard userIn={userIn} uid={uid} userType={userType} />}/>
           <Route path="/requests" element={<Requests userIn={userIn} uid={uid} userType={userType} />}/>
-          {/* <Route path="/scan/:workerMail/:id" element={<Scan userIn={userIn} uid={uid} userType={userType} />}/> */}
+          <Route path="/scan/:workerMail/:id" element={<Scan userIn={userIn} uid={uid} userType={userType} />}/>
           <Route path='*' element={<Out/>}/>
         </Routes>
       </BrowserRouter>

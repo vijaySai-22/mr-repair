@@ -100,7 +100,7 @@ export default function Dashboard(props) {
                             (rating!==0)?
                             <Row>
                                 <Col>
-                                    <h3 style={{float:'right'}}>Your Rating: <span style={{color:'white',backgroundColor:'black',padding:'3px',borderRadius:'5px'}}>{rating.toFixed(2)/ratedby}/5</span></h3>
+                                    <h3 style={{float:'right'}}>Your Rating: <span style={{color:'white',backgroundColor:'black',padding:'3px',borderRadius:'5px'}}>{(rating.toFixed(2)/ratedby).toFixed(2)}/5</span></h3>
                                 </Col>
                             </Row>:null
                         }
@@ -183,7 +183,7 @@ export default function Dashboard(props) {
                                         </Row>
                                     <hr/>
                                     <div lg={4} sm={12}>
-                                        <h3 style={{backgroundColor:'black',color:'white'}}>Your Rating Progress {rating.toFixed(2)/ratedby}/5</h3>
+                                        <h3 style={{backgroundColor:'black',color:'white'}}>Your Rating Progress {(rating.toFixed(2)/ratedby).toFixed(2)}/5</h3>
                                         {(workerData) &&
                                             <>
                                                 {

@@ -48,7 +48,7 @@ export default function Worker() {
                 </tr>
                 <tr>
                   <td><h3>Rating</h3></td>
-                  <td><h4>{data.rating.toFixed(2)/data.givenRatings}/5</h4></td>
+                  <td><h4>{(data.rating.toFixed(2)/data.givenRatings).toFixed(2)}/5</h4></td>
                 </tr>
                 <tr>
                   <td><h3>Services</h3></td>
