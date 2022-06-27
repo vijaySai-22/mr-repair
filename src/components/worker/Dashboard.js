@@ -50,22 +50,23 @@ export default function Dashboard(props) {
             setCanNoMoreRej(cancNoMore)
             setReq(requ)
             setX(1)
+            console.log(r)
             if(r && r.length>0){
                 let data={salon:0,plumber:0,carpenter:0,mechanic:0,electrician:0,ac:0,refrigerator:0,washingMachine:0,painter:0,tv:0,packingTruck:0,photgrapher:0,handyman:0}
                 for(let i=0;i<r.length;i++){
-                    if(r[i].problemType==='Salon'){data.salon=data.salon+1}
-                    if(r[i].problemType==='Plumber'){data.plumber=data.plumber+1}
-                    if(r[i].problemType==='Carpenter'){data.carpenter=data.carpenter+1}
-                    if(r[i].problemType==='Mechanic'){data.mechanic=data.mechanic+1}
-                    if(r[i].problemType==='Electrician'){data.electrician=data.electrician+1}
-                    if(r[i].problemType==='Ac'){data.ac=data.ac+1}
-                    if(r[i].problemType==='Refrigerator'){data.refrigerator=data.refrigerator+1}
-                    if(r[i].problemType==='WashingMachine'){data.washingMachine=data.washingMachine+1}
-                    if(r[i].problemType==='Painter'){data.painter=data.painter+1}
-                    if(r[i].problemType==='Tv'){data.tv=data.tv+1}
-                    if(r[i].problemType==='PackingTruck'){data.packingTruck=data.packingTruck+1}
-                    if(r[i].problemType==='Photgrapher'){data.photgrapher=data.photgrapher+1}
-                    if(r[i].problemType==='Handyman'){data.handyman=data.handyman+1}
+                    if(r[i].problemType==='salon'){data.salon=data.salon+1}
+                    if(r[i].problemType==='plumber'){data.plumber=data.plumber+1}
+                    if(r[i].problemType==='carpenter'){data.carpenter=data.carpenter+1}
+                    if(r[i].problemType==='mechanic'){data.mechanic=data.mechanic+1}
+                    if(r[i].problemType==='electrician'){data.electrician=data.electrician+1}
+                    if(r[i].problemType==='ac'){data.ac=data.ac+1}
+                    if(r[i].problemType==='refrigerator'){data.refrigerator=data.refrigerator+1}
+                    if(r[i].problemType==='washingMachine'){data.washingMachine=data.washingMachine+1}
+                    if(r[i].problemType==='painter'){data.painter=data.painter+1}
+                    if(r[i].problemType==='tv'){data.tv=data.tv+1}
+                    if(r[i].problemType==='packingTruck'){data.packingTruck=data.packingTruck+1}
+                    if(r[i].problemType==='photgrapher'){data.photgrapher=data.photgrapher+1}
+                    if(r[i].problemType==='handyman'){data.handyman=data.handyman+1}
                 }
                 setReqTypeData(data)
                 console.log(reqTypeData)

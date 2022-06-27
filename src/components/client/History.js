@@ -247,7 +247,7 @@ function Cards(props) {
                         </Modal.Header>
                         <Modal.Body>
                             <h3>Ask Worker to Scan</h3>
-                            <h6>Note: If scanned the is done</h6>
+                            <h6>Note: If scanned, the work is done</h6>
                             
                             {(qr)&&<img src={qr} alt='qrcode' />}
                         </Modal.Body>
