@@ -142,14 +142,14 @@ export default function Dashboard(props) {
                                     <h2 style={{backgroundColor:'black',color:'white'}}>Traffic Type</h2><hr/>
                                     <PieChart
                                         style={{margin:'-13px'}}
-                                        label={(props) => { if (props.dataEntry.value>0) return props.dataEntry.value;}}
+                                        label={(props) => { if (props.dataEntry.value>0) return `${props.dataEntry.title} (${props.dataEntry.value})`;}}
                                         data={[
                                             { title: 'Salon', value: reqTypeData.salon , color: 'gray' },
                                             { title: 'Plumbing', value: reqTypeData.plumber, color: 'silver' },
                                             { title: 'Carpenter', value: reqTypeData.carpenter, color: 'maroon' },
                                             { title: 'Electrician', value: reqTypeData.electrician, color: 'red' },
                                             { title: 'Mechanic', value: reqTypeData.mechanic, color: 'purple' },
-                                            { title: 'Ac', value: reqTypeData.ac, color: 'fushsia' },
+                                            { title: 'Ac', value: reqTypeData.ac, color: 'violet' },
                                             { title: 'Refrigerator', value: reqTypeData.refrigerator, color: 'green' },
                                             { title: 'WashingMachine', value: reqTypeData.washingMachine, color: 'lime' },
                                             { title: 'Painter', value: reqTypeData.painter, color: 'olive' },
@@ -158,7 +158,7 @@ export default function Dashboard(props) {
                                             { title: 'Photgrapher', value: reqTypeData.photgrapher, color: 'blue' },
                                             { title: 'Handyman', value: reqTypeData.handyman, color: 'teal' },
                                         ]}  
-                                        labelStyle={{fontSize:'3px'}}
+                                        labelStyle={{fontSize:'2px'}}
                                         center={[25,25]}
                                         viewBoxSize={[50,50]}
                                         radius={25}
@@ -177,7 +177,7 @@ export default function Dashboard(props) {
                                             <p style={{fontSize:'0.8em'}}><SquareFill style={{border:'solid black 1px'}} color= 'lime' /> WashingMachine </p>
                                             <p style={{fontSize:'0.8em'}}><SquareFill style={{border:'solid black 1px'}} color= 'olive' /> Painter </p>
                                             <p style={{fontSize:'0.8em'}}><SquareFill style={{border:'solid black 1px'}} color= 'yellow' /> Tv </p>
-                                            <p style={{fontSize:'0.8em'}}><SquareFill style={{border:'solid black 1px'}} color= 'fushsia' /> Ac </p>
+                                            <p style={{fontSize:'0.8em'}}><SquareFill style={{border:'solid black 1px'}} color= 'violet' /> Ac </p>
                                             <p style={{fontSize:'0.8em'}}><SquareFill style={{border:'solid black 1px'}} color= 'teal' /> Handyman </p>
                                             <p style={{fontSize:'0.8em'}}><SquareFill style={{border:'solid black 1px'}} color= 'blue' /> Photgrapher </p>
                                             <p style={{fontSize:'0.8em'}}><SquareFill style={{border:'solid black 1px'}} color= 'navy' /> PackingTruck</p>
