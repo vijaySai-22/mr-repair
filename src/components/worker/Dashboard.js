@@ -126,7 +126,7 @@ export default function Dashboard(props) {
                                             { title: 'Pending', value: pending, color: '#f1ff2b' },
                                             { title: 'Cancelled/Rejected', value: canNoMoreRej, color: '#ff0f0f' },
                                         ]}  
-                                        labelStyle={{fontSize:'2.5px'}}
+                                        labelStyle={{fontSize:'2px'}}
                                         center={[25,25]}
                                         viewBoxSize={[50,50]}
                                         radius={25}

@@ -25,6 +25,7 @@ export default function Home(props) {
             if(doc.data().rating/doc.data().givenRatings>=3){
               ratingData.push({...doc.data(),id:doc.id})
             }
+            ratingData.sort(function(a, b){return b.rating/b.givenRatings-a.rating/a.givenRatings});//sorting the rating
           })
           setHighRatedWorkers(ratingData)
           setData(data)
